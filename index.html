@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Valor-ant</title>
-  </head>
-  <body>
-    <center>
+
+<head>
+  <meta charset="utf-8">
+  <title>Valor-ant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <center>
     <h1>Valor-Ant</h1>
     <h2>En construcción.dd..</h2>
-    <h1>La beta cerrada comienza en:</h1> </center>
-    <style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
-</head>
-<body>
+    <h1>La beta cerrada comienza en:</h1>
+  </center>
+  <style>
+    p {
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+  </style>
+  </head>
 
-<p id="demo"></p>
+  <body>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 7, 2020 14:00:00").getTime();
+    <p id="demo"></p>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Apr 7, 2020 14:00:00").getTime();
 
-  // Get today's date and time
-  var now = new Date().getTime();
+      // Update the count down every 1 second
+      var x = setInterval(function() {
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+        // Get today's date and time
+        var now = new Date().getTime();
 
-  // Time calculations for days, hours, minutes and seconds
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-<br><br><br> <h1>Contenidos Extras</h1> <br>
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here are all the weapons in HD (thread). Please credit us if re-used!<a href="https://twitter.com/hashtag/VALORANT?src=hash&amp;ref_src=twsrc%5Etfw">#VALORANT</a> | <a href="https://twitter.com/PlayVALORANT?ref_src=twsrc%5Etfw">@PlayVALORANT</a> <a href="https://t.co/OTXfilBgsq">pic.twitter.com/OTXfilBgsq</a></p>&mdash; VALORANT Source (@ValorantSource) <a href="https://twitter.com/ValorantSource/status/1246206178461462534?ref_src=twsrc%5Etfw">April 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = hours + "h " +
+          minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+    <br><br><br>
+    <h1>Contenidos Extras</h1> <br>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Here are all the weapons in HD (thread). Please credit us if re-used!<a href="https://twitter.com/hashtag/VALORANT?src=hash&amp;ref_src=twsrc%5Etfw">#VALORANT</a> | <a
+          href="https://twitter.com/PlayVALORANT?ref_src=twsrc%5Etfw">@PlayVALORANT</a> <a href="https://t.co/OTXfilBgsq">pic.twitter.com/OTXfilBgsq</a></p>&mdash; VALORANT Source (@ValorantSource) <a
+        href="https://twitter.com/ValorantSource/status/1246206178461462534?ref_src=twsrc%5Etfw">April 3, 2020</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
+
 </html>
