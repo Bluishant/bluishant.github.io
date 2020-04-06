@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ejercicios HTML</title>
+  <title>Lamborghini Urus</title>
   <link rel=" icon" type=”image/png” href="static/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="static/main.css">
 </head>
 
-<body style="background-color:#ffffff;">
+<body style="background-color:#000000;">
   <!-- NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Inicio</a>
@@ -41,16 +41,42 @@
           <a class="nav-link" href="https://github.com/JimmyVaras/jimmyvaras.github.io" target="_blank">Código de la web</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" aria-disabled="false" target="blank">Más...</a>
+          <a class="nav-link disabled" href="#" aria-disabled="true">Más...</a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- NAVBAR-->
 
-  <div class="jumbotron">
-  <h1 class="display-4">Hola!</h1>
-  <p class="lead">Esta es la página principal de mi web que reune todos los ejercicios HTML realizados por <a href="https://twitter.com/JimmyDaBlue" target="_blank">Jaime Varas Cáceres</a>.</p>
-  <hr class="my-4">
-  <a class="btn btn-primary btn-lg" href="Ejercicio_1" role="button">Empieza por el primer ejercicio</a>
-</div>
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="lambos/Uruspic1.jpg" class="d-block w-100" alt="Galería Urus">
+        </div>
+        <div class="carousel-item">
+          <img src="lambos/Uruspic2.jpg" class="d-block w-100" alt="Galería Urus">
+        </div>
+        <div class="carousel-item">
+          <img src="lambos/Uruspic3.jpg" class="d-block w-100" alt="Galería Urus">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>
